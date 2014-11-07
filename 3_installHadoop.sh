@@ -5,10 +5,10 @@ gpg --keyserver pgp.mit.edu --recv-keys B9733A7A07513CAD
 #following can only run by root
 sudo gpg -a --export 07513CAD | apt-key add -
 sudo apt-get update
-sudo apt-get install hadoop hadoop-hdfs libhdfs0 libhdfs0-dev hadoop-yarn hadoop-mapreduce hadoop-client openssl
-sudo apt-get install libsnappy1 libsnappy-dev
+sudo apt-get --yes --force-yes install hadoop hadoop-hdfs libhdfs0 libhdfs0-dev hadoop-yarn hadoop-mapreduce hadoop-client openssl
+sudo apt-get --yes --force-yes install libsnappy1 libsnappy-dev
 sudo ln -sf /usr/lib64/libsnappy.so /usr/lib/hadoop/lib/native/.
-sudo apt-get install liblzo2-2 liblzo2-dev hadoop-lzo
+sudo apt-get --yes --force-yes install liblzo2-2 liblzo2-dev hadoop-lzo
 
 #create all directories
 sudo -E hdp_manual_install_rpm_helper_files-2.1.5.695-1/scripts/createDirectories.sh
