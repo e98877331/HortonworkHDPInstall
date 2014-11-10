@@ -103,7 +103,7 @@ HBASE_PID_DIR="/var/run/hbase";
 #
 
 # Directory where ZooKeeper will store data. For example, /grid1/hadoop/zookeeper/data
-ZOOKEEPER_DATA_DIR="/grid1/hadoop/zookeeper/data";
+ZOOKEEPER_DATA_DIR="/grid/hadoop/zookeeper/data";
 
 # Directory to store the ZooKeeper configuration files.
 ZOOKEEPER_CONF_DIR="/etc/zookeeper/conf";
