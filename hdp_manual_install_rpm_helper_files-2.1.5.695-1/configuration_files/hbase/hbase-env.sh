@@ -20,7 +20,7 @@
 # Set environment variables here.
 
 # The java implementation to use. Java 1.7 required.
-export JAVA_HOME=/usr/jdk64/jdk1.7.0_45
+export JAVA_HOME=/usr/lib/jvm/java-7-oracle
 
 # HBase Configuration directory
 export HBASE_CONF_DIR=${HBASE_CONF_DIR:-/etc/hbase/conf}

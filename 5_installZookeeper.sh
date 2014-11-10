@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt-get install zookeeper
+#sudo apt-get install zookeeper
 sudo usermod zookeeper -s /bin/bash
 
 
@@ -17,7 +17,7 @@ sudo chmod -R 755 $ZOOKEEPER_CONF_DIR/../
 sudo su - zookeeper -c "vim /grid/hadoop/zookeeper/data/myid"
 
 
-sudo su - zookeeper -c 'source /etc/zookeeper/conf/zookeeper-env.sh ; export ZOOCFGDIR=/etc/zookeeper/conf;/usr/lib/zookeeper/bin/zkServer.sh start >> /var/log/zookeeper/zoo.out 2>&1'
+#sudo su - zookeeper -c 'source /etc/zookeeper/conf/zookeeper-env.sh ; export ZOOCFGDIR=/etc/zookeeper/conf;/usr/lib/zookeeper/bin/zkServer.sh start >> /var/log/zookeeper/zoo.out 2>&1'
 echo "===================================================="
 echo "create $ZOOKEEPER_DATA_DIR/myid then specify server id"
 echo "===================================================="

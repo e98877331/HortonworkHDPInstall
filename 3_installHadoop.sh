@@ -8,7 +8,7 @@ sudo apt-get update
 sudo apt-get --yes --force-yes install hadoop hadoop-hdfs libhdfs0 libhdfs0-dev hadoop-yarn hadoop-mapreduce hadoop-client openssl
 sudo apt-get --yes --force-yes install libsnappy1 libsnappy-dev
 sudo ln -sf /usr/lib64/libsnappy.so /usr/lib/hadoop/lib/native/.
-sudo apt-get --yes --force-yes install liblzo2-2 liblzo2-dev hadoop-lzo
+sudo apt-get --yes --force-yes install liblzo2-2 liblzo2-dev hadoop-lzo zookeeper hbase
 
 #create all directories
 sudo -E hdp_manual_install_rpm_helper_files-2.1.5.695-1/scripts/createDirectories.sh
