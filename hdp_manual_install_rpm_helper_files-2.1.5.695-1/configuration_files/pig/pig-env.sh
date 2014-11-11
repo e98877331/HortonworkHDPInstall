@@ -13,5 +13,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-JAVA_HOME=/usr/java/default
+JAVA_HOME=/usr/lib/jvm/java-7-oracle
 HADOOP_HOME=${HADOOP_HOME:-/usr}
