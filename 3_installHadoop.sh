@@ -1,7 +1,7 @@
 #!/bin/bash
 umask 0022
 sudo wget http://public-repo-1.hortonworks.com/HDP/ubuntu12/2.1.5.0/hdp.list -O /etc/apt/sources.list.d/hdp.list
-gpg --keyserver pgp.mit.edu --recv-keys B9733A7A07513CAD
+sudo gpg --keyserver pgp.mit.edu --recv-keys B9733A7A07513CAD
 #following can only run by root
 sudo gpg -a --export 07513CAD | apt-key add -
 sudo apt-get update
@@ -19,6 +19,10 @@ sudo cp -r ./hdp_manual_install_rpm_helper_files-2.1.5.695-1/configuration_files
 
 sudo chown hdfs:hadoop /etc/hadoop/conf
 sudo chmod 775 /etc/hadoop/conf
+
+
+sudo chown -R root:hadoop /usr/lib/hadoop-yarn/bin/container-executor
+sudo chmod -R 650 /usr/lib/hadoop-yarn/bin/container-executor
 
 echo "==============================================="
 echo "remember to source $PWD/cyyEnv.sh in /etc/profile"
