@@ -14,6 +14,8 @@ sudo chmod -R 755 $ZOOKEEPER_CONF_DIR/../
 
 #sudo su - zookeeper -c "vim /grid/hadoop/zookeeper/data/myid"
 
+read -p "enter to edit /grid/hadoop/zookeeper/data/myid"
+
 sudo su - zookeeper -c "vim /grid/hadoop/zookeeper/data/myid"
 
 
