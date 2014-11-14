@@ -41,13 +41,13 @@
 
     <property>
       <name>mapreduce.jobhistory.address</name>
-      <value>10.0.2.15:10020</value>
+      <value>192.168.33.10:10020</value>
     </property> 
 
 
     <property>
       <name>mapreduce.jobhistory.webapp.address</name>
-      <value>10.0.2.15:19888</value>
+      <value>192.168.33.10:19888</value>
     </property> 
 
     <property>

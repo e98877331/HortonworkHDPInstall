@@ -106,7 +106,7 @@
 
     <property>
       <name>hbase.rootdir</name>
-      <value>hdfs://10.0.2.15:8020/apps/hbase/data</value>
+      <value>hdfs://192.168.33.10:8020/apps/hbase/data</value>
     </property> 
 
     <property>
@@ -136,7 +136,7 @@
 
     <property>
       <name>hbase.zookeeper.quorum</name>
-      <value>10.0.2.15</value>
+      <value>192.168.33.10</value>
     </property> 
 
     <property>

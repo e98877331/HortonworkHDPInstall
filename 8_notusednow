@@ -1,0 +1,8 @@
+#!/bin/bash
+source ./cyyEnv.sh
+
+sudo su - hdfs -c "hadoop --config $HADOOP_CONF_DIR namenode -format"
+
+
+
+sudo su - hdfs -c "/usr/lib/hadoop/sbin/hadoop-daemon.sh --config $HADOOP_CONF_DIR start namenode"
