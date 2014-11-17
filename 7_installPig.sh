@@ -1,5 +1,6 @@
 #!/bin/bash
 
+source ./cyyEnv.sh
 sudo apt-get  --yes --force-yes install pig
 
 sudo rm -r $PIG_CONF_DIR

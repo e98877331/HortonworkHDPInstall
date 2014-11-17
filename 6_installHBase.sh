@@ -1,5 +1,6 @@
 #!/bin/bash
 
+source ./cyyEnv.sh
 
 sudo rm -r $HBASE_CONF_DIR ;
 sudo mkdir -p $HBASE_CONF_DIR ;

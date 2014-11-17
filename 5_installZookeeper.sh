@@ -1,4 +1,6 @@
 #!/bin/bash
+
+source ./cyyEnv.sh
 #sudo apt-get install zookeeper
 sudo usermod zookeeper -s /bin/bash
 
