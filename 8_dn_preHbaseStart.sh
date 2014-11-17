@@ -1,7 +1,7 @@
 #!/bin/bash
 #source ./usersAndGroups.sh
 #source ./directories.sh
-source ../cyyEnv.sh
+source ./cyyEnv.sh
 
 #sudo su - hdfs -c "/usr/lib/hadoop/sbin/hadoop-daemon.sh --config $HADOOP_CONF_DIR start namenode"
 sudo su - hdfs -c "/usr/lib/hadoop/sbin/hadoop-daemon.sh --config $HADOOP_CONF_DIR start datanode"
