@@ -1,4 +1,12 @@
 #!/bin/bash
+source ./cyyEnv.sh
+
+if [ -z "$HADOOP_CONF_DIR" ] || [ -z "$ZOOKEEPER_CONF_DIR" ] || [ -z "$HBASE_CONF_DIR" ] || [ -z "$PIG_CONF_DIR" ] ; then
+	echo "WRONG ENVIRONMENT,LACK SOME HADOOP VARIABLE"
+	exit 0
+fi
+
+
 
 
 sudo rm -rf /etc/hadoop/conf
