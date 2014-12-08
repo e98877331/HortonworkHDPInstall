@@ -174,7 +174,7 @@
 
     <property>
     <name>dfs.namenode.http-address</name>
-    <value>192.168.113.100:50070</value>
+    <value>vm1.cyy.com:50070</value>
   </property> 
 
     <property>
@@ -194,7 +194,7 @@
 
     <property>
     <name>dfs.namenode.secondary.http-address</name>
-    <value>192.168.113.100:50090</value>
+    <value>vm1.cyy.com:50090</value>
   </property> 
 
     <property>
